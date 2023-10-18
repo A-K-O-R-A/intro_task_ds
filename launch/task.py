@@ -10,14 +10,8 @@ def generate_launch_description():
             name='sim'
         ),
         Node(
-            package='turtlesim',
-            namespace='turtlesim2',
-            executable='turtlesim_node',
-            name='sim'
-        ),
-        Node(
             package='py_srvcli',
-            executable='py_srvcli',
+            executable='client',
             remappings=[
                 ('/input/pose', '/turtlesim1/turtle1/pose'),
                 ('/output/cmd_vel', '/turtlesim1/turtle1/cmd_vel'),
