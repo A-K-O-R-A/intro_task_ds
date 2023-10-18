@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'py_srvcli'
+package_name = 'color_changer'
 
 setup(
     name=package_name,
@@ -13,15 +13,14 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='akora',
-    maintainer_email='dragoncatm@gmail.com',
-    description='UwU Server',
-    license='GPL',
+    maintainer='blank',
+    maintainer_email='git@github.com',
+    description='Changes the background color of the turtlesim window when the turtle touches the walls',
+    license='MIT',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'service = py_srvcli.service_member_function:main',
-            'client = py_srvcli.client_member_function:main',
+            'client = color_changer.client_member_function:main',
         ],
     },
 )

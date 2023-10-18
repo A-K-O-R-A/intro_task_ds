@@ -1,9 +1,8 @@
 import sys
 
-
-
 from turtlesim.msg import Pose
-from rcl_interfaces.msg import Parameter, SetParameters, ParameterValue
+from rcl_interfaces.msg import Parameter, ParameterValue
+from rcl_interfaces.srv import SetParameters
 
 import rclpy
 from rclpy.node import Node
@@ -69,14 +68,13 @@ class ColorClient(Node):
 
 def main():
     rclpy.init()
-
     color_client = ColorClient()
 
     rclpy.spin(color_client)
+
     color_client.destroy_node()
     rclpy.shutdown()
 
-"""
 
 if __name__ == '__main__':
     main()

@@ -4,8 +4,8 @@
   <name>color_changer</name>
   <version>0.0.0</version>
   <description>Changes the background color of the turtlesim window when the turtle touches the walls</description>
-  <maintainer email="a@b.c">blank</maintainer>
-  <license>GPL</license>
+  <maintainer email="git@github.com">blank</maintainer>
+  <license>MIT</license>
 
   <depend>rclpy</depend>
   <depend>turtlesim</depend>
