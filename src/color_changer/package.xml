@@ -1,14 +1,13 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>py_srvcli</name>
+  <name>color_changer</name>
   <version>0.0.0</version>
-  <description>UwU Server</description>
-  <maintainer email="dragoncatm@gmail.com">akora</maintainer>
+  <description>Changes the background color of the turtlesim window when the turtle touches the walls</description>
+  <maintainer email="a@b.c">blank</maintainer>
   <license>GPL</license>
 
   <depend>rclpy</depend>
-  <depend>tut_inter</depend>
   <depend>turtlesim</depend>
 
   <test_depend>ament_copyright</test_depend>
